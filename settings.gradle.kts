@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "Time Stamps"
 include(":app")
 include(":timestampsdatabase")
+include(":features:timestamps-main")
