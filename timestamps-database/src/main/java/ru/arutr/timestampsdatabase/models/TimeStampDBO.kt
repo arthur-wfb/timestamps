@@ -5,11 +5,11 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.Date
 
-@Entity
+@Entity(tableName = "timestamps")
 data class TimeStampDBO(
     @PrimaryKey(autoGenerate = true) val id: Long,
     @ColumnInfo("title") val title: String,
     @ColumnInfo("description") val description: String,
-    @ColumnInfo("date") val date: Date,
+    @ColumnInfo("date") val date: Int,
 //    @ColumnInfo("tags") val tags:
 )
