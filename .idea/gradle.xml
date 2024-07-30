@@ -12,7 +12,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/features/timestamps-main" />
-            <option value="$PROJECT_DIR$/timestampsdatabase" />
+            <option value="$PROJECT_DIR$/timestamps-data" />
+            <option value="$PROJECT_DIR$/timestamps-database" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
