@@ -54,4 +54,6 @@ dependencies {
 
     implementation(libs.kotlinx.coroutines.android)
 
+    implementation(project(":timestamps-data"))
+
 }
