@@ -10,6 +10,6 @@ data class TimeStampDBO(
     @PrimaryKey(autoGenerate = true) val id: Long,
     @ColumnInfo("title") val title: String,
     @ColumnInfo("description") val description: String,
-    @ColumnInfo("date") val date: Int,
+    @ColumnInfo("date") val date: Date,
 //    @ColumnInfo("tags") val tags:
 )
