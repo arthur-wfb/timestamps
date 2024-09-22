@@ -11,14 +11,14 @@ import ru.arutr.timestampsdatabase.models.TimeStampDBO
 interface TimeStampDao {
 
     @Query("SELECT * FROM timestamps WHERE date > unixepoch()")
-    suspend fun getUpcoming(): Flow<List<TimeStampDBO>>
+    fun getUpcoming(): Flow<List<TimeStampDBO>>
 
     @Query("SELECT * FROM timestamps WHERE date < unixepoch()")
-    suspend fun getPast(): Flow<List<TimeStampDBO>>
+    fun getPast(): Flow<List<TimeStampDBO>>
 
     @Insert
-    suspend fun insert(timeStamp: TimeStampDBO)
+    fun insert(timeStamp: TimeStampDBO)
 
     @Delete
-    suspend fun remove(timeStamp: TimeStampDBO)
+    fun remove(timeStamp: TimeStampDBO)
 }

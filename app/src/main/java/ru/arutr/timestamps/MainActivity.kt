@@ -9,6 +9,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import ru.arutr.timestamps.main.ui.FutureTimeStampsScreen
 import ru.arutr.timestamps.ui.theme.TimeStampsTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +19,7 @@ class MainActivity : ComponentActivity() {
             TimeStampsTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
+                    FutureTimeStampsScreen()
                 }
             }
         }
