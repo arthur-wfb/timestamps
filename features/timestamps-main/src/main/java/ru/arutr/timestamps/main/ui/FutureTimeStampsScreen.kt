@@ -16,9 +16,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun FutureTimeStampsScreen(timeStamps: List<TimeStampUi> = listOf()) {
+fun FutureTimeStampsScreen(timeStamps: List<TimeStampUi> = listOf(), onCreateButtonClick: () -> Unit) {
     Scaffold(
-        floatingActionButton = { CreateNewButton(onClick = {}) },
+        floatingActionButton = { CreateNewButton(onClick = onCreateButtonClick) },
         floatingActionButtonPosition = FabPosition.Center
     ) { paddingValues ->
         LazyVerticalGrid(
