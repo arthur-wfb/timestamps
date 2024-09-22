@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import ru.arutr.timestamps.main.ui.FutureTimeStampsScreen
+import ru.arutr.timestamps.main.ui.TimeStampUi
 import ru.arutr.timestamps.ui.theme.TimeStampsTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +20,112 @@ class MainActivity : ComponentActivity() {
             TimeStampsTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    FutureTimeStampsScreen()
+                    FutureTimeStampsScreen(
+                        listOf(
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                            TimeStampUi(
+                                title = "День рождения",
+                                description = "С друзьями",
+                                date = "15.06.2025",
+                                timeDifference = "Через 6 мес и 3 дня",
+                            ),
+                        )
+                    )
                 }
             }
         }
