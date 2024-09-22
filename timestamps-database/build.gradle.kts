@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "ru.arutr.timestamps-database"
+    namespace = "ru.arutr.timestamps.database"
     compileSdk = 34
 
     defaultConfig {
