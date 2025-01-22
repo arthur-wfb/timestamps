@@ -16,7 +16,7 @@ import ru.arutr.createtimestamp.ui.CreateTimeStampScreen
 import ru.arutr.timestamps.main.ui.FutureTimeStampsScreen
 import ru.arutr.timestamps.main.ui.TimeStampUi
 import ru.arutr.timestamps.navigation.Route
-import ru.arutr.timestamps.ui.theme.TimeStampsTheme
+import ru.arutr.common.theme.TimeStampsTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

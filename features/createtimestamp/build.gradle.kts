@@ -27,6 +27,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        compose = true
+    }
 }
 
 dependencies {
@@ -46,5 +49,6 @@ dependencies {
 
     implementation(libs.kotlinx.coroutines.android)
 
+    implementation(project(":common"))
     implementation(project(":timestamps-data"))
 }

@@ -1,4 +1,4 @@
-package ru.arutr.timestamps.ui.theme
+package ru.arutr.common.theme
 
 import androidx.compose.ui.graphics.Color
 
