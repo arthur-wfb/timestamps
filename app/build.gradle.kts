@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kotlinSerialization)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hiltPlugin)
 }
 
 android {
@@ -57,6 +59,9 @@ dependencies {
     implementation(libs.androidx.material3)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.kotlinx.serialization.json)
+    implementation (libs.hilt.android)
+    implementation (libs.hilt.navigation.compose)
+    ksp(libs.hilt.compiler)
 
     implementation(project(":common"))
     implementation(project(":features:timestamps-main"))

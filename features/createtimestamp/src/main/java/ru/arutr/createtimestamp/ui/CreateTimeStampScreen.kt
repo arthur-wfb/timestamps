@@ -16,20 +16,21 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import ru.arutr.common.theme.TimeStampsTheme
 
 @Composable
-fun CreateTimeStampScreen() {
-    Content()
+fun CreateTimeStampScreen(viewModel: CreateTimeStampViewModel = hiltViewModel()) {
+    Content(onDateChanged = viewModel::onDateChanged)
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun Content() {
+private fun Content(onDateChanged: (Long?) -> Unit) {
     val datePickerState = rememberDatePickerState()
 
     LaunchedEffect(datePickerState.selectedDateMillis) {
-        // TODO: onDateChanged
+        onDateChanged(datePickerState.selectedDateMillis)
     }
 
     Column(
@@ -70,6 +71,6 @@ private fun Content() {
 @Composable
 private fun Preview() {
     TimeStampsTheme {
-        Content()
+        Content({})
     }
 }

@@ -12,12 +12,14 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import dagger.hilt.android.AndroidEntryPoint
+import ru.arutr.common.theme.TimeStampsTheme
 import ru.arutr.createtimestamp.ui.CreateTimeStampScreen
 import ru.arutr.timestamps.main.ui.FutureTimeStampsScreen
 import ru.arutr.timestamps.main.ui.TimeStampUi
 import ru.arutr.timestamps.navigation.Route
-import ru.arutr.common.theme.TimeStampsTheme
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
